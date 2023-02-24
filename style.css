@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,95 +9,104 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 48px;
+  margin: 64px 48px 64px 48px;
 }
 
-.tryFreeBtn {
+.testeGratisBotao {
   font-family: "Poppins";
   color: hsl(322, 100%, 66%);
   background-color: transparent;
-  padding: 8px 24px;
   border: 2px solid hsl(322, 100%, 66%);
   border-radius: 50px;
+  padding: 8px 24px;
   cursor: pointer;
 }
 
 .secao1 {
   font-family: "Open Sans";
-
-  display: grid;
-  grid-template-areas:
-    "tituloSecao1, tituloSecao1, tituloSecao1"
-    "subtituloSecao1, subtituloSecao1, subtituloSecao1"
-    "getStartedForFreeSecao1, getStartedForFreeSecao1, getStartedForFreeSecao1"
-    "screenMockups, screenMockups, screenMockups"
-    "estatisticas, estatisticas, estatisticas";
-  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .tituloSecao1 {
   font-weight: 700;
   font-size: 48px;
   color: hsl(192, 100%, 9%);
-  grid-area: "tituloSecao1";
   text-align: center;
-  margin: 82px 60px 8px 60px;
+  margin: 80px 60px 8px 60px;
 }
 
 .subtituloSecao1 {
   font-weight: 600;
-  color: #6d6d6d;
   font-size: 18px;
-  grid-area: "subtituloSecao1";
+  color: #6d6d6d;
   text-align: center;
-  margin: 8px 400px 28px 400px;
+  margin: 18px 400px 48px 400px;
 }
 
-.getStartedForFreeSecao1 {
-  grid-area: "getStartedForFreeSecao1";
-  padding: 28px 48px;
-  margin: 8px 490px 28px 490px;
+.comeceGratuitamenteSecao1 {
+  width: 400px;
+  padding: 32px 48px;
+  margin: 18px 474px 48px 474px;
   border: none;
   border-radius: 50px;
   background-color: hsl(322, 100%, 66%);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
   font-size: 18px;
   font-weight: 600;
   color: #fff;
   cursor: pointer;
 }
 
-.screenMockups {
-  grid-area: "screenMockups";
-  margin: 22px auto;
+.secao1 img {
+  width: 75%;
+  margin: 62px auto;
 }
 
 .estatisticas {
-  grid-area: "estatisticas";
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  height: 55vh;
+  justify-content: space-evenly;
+}
+
+.estatisticas div {
+  display: flex;
+  flex-direction: column;
+}
+
+.estatisticas img {
+  width: 38px;
+  height: 38px;
+  padding: 0 0 auto 0;
+  margin: 0 0 auto 8px;
 }
 
 .numeros {
   font-size: 72px;
   font-weight: 700;
   color: hsl(192, 100%, 9%);
+  padding: 0 auto;
+  margin: 0 auto;
 }
 
 .subtituloNumeros {
-  text-align: center;
-  color: #6d6d6d;
   font-size: 20px;
   font-weight: 400;
+  color: #6d6d6d;
+  padding: 0 auto;
+  margin: 0 auto;
 }
 
-.secao2 {
+/* .wave {
+  width: 100vw;
+} */
+
+.secao {
   display: flex;
   flex-direction: column;
 }
 
-.secao2-1 {
+.conteudoSecao {
   height: 70vh;
   display: flex;
   justify-content: space-around;
@@ -111,83 +119,29 @@
   justify-content: center;
   width: 450px;
   font-family: "Open Sans";
+  row-gap: 32px;
 }
 
-.tituloSecao2 {
+.titulo {
   font-weight: 700;
   font-size: 48px;
   color: hsl(192, 100%, 9%);
-  padding-bottom: 32px;
 }
 
-.subtituloSecao2 {
+.subtitulo {
   font-weight: 600;
   color: #6d6d6d;
   font-size: 16px;
-  width: 510px;
 }
 
-.growTogether {
+.imgSecao {
   width: 450px;
-  height: auto;
 }
 
 .secao3 {
   display: flex;
   height: 70vh;
   justify-content: space-around;
-}
-
-.secao3 > .textoContainer {
-  width: 550px;
-}
-
-.flowingConversations {
-  width: 500px;
-  height: auto;
-}
-
-.tituloSecao3 {
-  font-weight: 700;
-  font-size: 48px;
-  color: hsl(192, 100%, 9%);
-}
-
-.subtituloSecao3 {
-  font-weight: 600;
-  color: #6d6d6d;
-  font-size: 16px;
-}
-
-.secao4 {
-  display: flex;
-  flex-direction: column;
-}
-
-.secao4-1 {
-  display: flex;
-  justify-content: space-around;
-  height: 70vh;
-  background-color: hsl(207, 100%, 98%);
-}
-
-.tituloSecao4 {
-  font-weight: 700;
-  font-size: 48px;
-  color: hsl(192, 100%, 9%);
-  padding-bottom: 32px;
-}
-
-.subtituloSecao4 {
-  font-weight: 600;
-  color: #6d6d6d;
-  font-size: 16px;
-  width: 510px;
-}
-
-.yourUsers {
-  width: 500px;
-  height: auto;
 }
 
 .secao5 {
@@ -203,18 +157,16 @@
   font-weight: 700;
   font-size: 42px;
   color: hsl(192, 100%, 9%);
-  grid-area: "tituloSecao1";
   text-align: center;
-  margin: 82px 60px 28px 60px;
+  margin-bottom: 32px;
 }
 
-.getStartedForFreeSecao5 {
-  grid-area: "getStartedForFreeSecao1";
+.comeceGratuitamenteSecao5 {
   padding: 28px 98px;
-  margin: 8px 440px 28px 440px;
   border: none;
   border-radius: 50px;
   background-color: hsl(322, 100%, 66%);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
   font-size: 24px;
   font-weight: 600;
   color: #fff;
@@ -226,7 +178,7 @@
   flex-direction: column;
 }
 
-.footer-1 {
+.footerContentContainer {
   display: flex;
   justify-content: space-around;
   height: 80vh;
@@ -234,10 +186,10 @@
 }
 
 .logoFooter {
-  width: 200px;
-  color: #fff;
+  width: 300px;
 }
-.contatos {
+
+.footerContent {
   display: flex;
   flex-direction: column;
   width: 400px;
@@ -247,23 +199,13 @@
   color: #fff;
 }
 
-.contatos a {
+.footerContent a {
   text-decoration: none;
   color: #fff;
 }
 
-.contatos img {
+.footerContent img {
   padding-right: 12px;
-}
-
-.newsletter {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  font-family: "Open Sans";
-  gap: 22px;
-  margin-top: 64px;
-  color: #fff;
 }
 
 .tituloNewsletter {
@@ -281,21 +223,30 @@
   border-radius: 8px;
 }
 
-.subscribe {
+.inscreverBtn {
   background-color: hsl(322, 100%, 66%);
   color: #fff;
   font-size: 14px;
   font-family: "Open Sans";
   font-weight: 600;
-  border-radius: 8px;
-  border: 2px solid hsl(322, 100%, 66%);
-  height: 45px;
-  width: 120px;
+  border-radius: 6px;
+  border: none;
+  height: 46px;
+  width: 140px;
+}
+
+.redesSociais {
+  background-color: hsl(192, 100%, 9%);
+  display: flex;
+  column-gap: 12px;
+  margin: 22px 220px 0px 0px;
 }
 
 .attribution {
-  font-size: 11px;
+  font-family: "Open Sans";
+  font-size: 12px;
   text-align: center;
+  height: 22px;
 }
 
 .attribution a {
